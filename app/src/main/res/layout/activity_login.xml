@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4F8E4"
+    android:padding="30dp"
+    tools:context=".common.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:id="@+id/Login_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            app:tint="#040404" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textColor="#020202"
+            android:textSize="36sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/enter_username"
+                android:textColorHint="#070707"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:startIconDrawable="@drawable/ic_baseline_person_24"
+                app:startIconTint="@color/black"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColor="#070707"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword"
+                android:textColorHint="#070707"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/black"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                app:startIconTint="@color/black"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#070707" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/black"
+                    android:text="@string/remember_me"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/forget_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="#00000000"
+                    android:text="@string/forget_password"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/black"
+                android:elevation="5dp"
+                android:text="@string/login_Button"
+                android:textColor="@color/white"
+                android:onClick="callMainScreen"/>
+
+            <Button
+                android:id="@+id/create_account_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:text="@string/create_account"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:onClick="callRegisterScreen"
+                android:transitionName="transition_create"
+
+                />
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</ScrollView>

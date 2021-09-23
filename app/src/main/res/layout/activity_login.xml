@@ -128,7 +128,7 @@
             </RelativeLayout>
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/loginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
@@ -136,7 +136,7 @@
                 android:elevation="5dp"
                 android:text="@string/login_Button"
                 android:textColor="@color/white"
-                android:onClick="callMainScreen"/>
+                />
 
             <Button
                 android:id="@+id/create_account_btn"

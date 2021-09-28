@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".common.Registration2Activity"
+    android:background="#A4F8E4">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:text="Create\nAccount"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+        <TextView
+            android:id="@+id/choose_textView"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/choose_gender"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="25dp"/>
+
+               <RadioGroup
+                   android:id="@+id/radio_group"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="10dp"
+                   android:layout_gravity="center"
+                   android:layout_marginStart="20dp"
+                   >
+
+                   <RadioButton
+                       android:id="@+id/radioButton3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/male"
+
+                       />
+
+                   <RadioButton
+                       android:id="@+id/radioButton2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/female" />
+
+                   <RadioButton
+                       android:id="@+id/radioButton"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/other" />
+               </RadioGroup>
+
+               <TextView
+                   android:id="@+id/age_selection_textView"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="sans-serif-black"
+                   android:text="@string/select_your_age"
+                   android:textAllCaps="false"
+                   android:textColor="@color/black"
+                   android:textSize="18sp"
+                   android:layout_marginStart="25dp"/>
+
+
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:spinnersShown="true"
+            />
+
+
+           </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/next2_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:text="@string/next"
+            android:elevation="5dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

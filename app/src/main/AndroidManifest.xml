@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.etoll_system">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the "MyLocation" functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ETollSystem">
-
+        <activity android:name=".common.SetNewPasswordActivity"></activity>
+        <activity android:name=".common.Registration2Activity" />
+        <activity android:name=".common.VerifyOTPActivity" />
+        <activity android:name=".common.MakeSelectionActivity" />
+        <activity android:name=".common.ForgetPassword1Activity" />
+        <activity android:name=".User.Dashboard" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -31,11 +35,11 @@
 
         <activity
             android:name=".User.MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
         <activity android:name=".common.Last_RegistrationActivity" />
         <activity android:name=".common.Next_RegistrationActivity" />
         <activity android:name=".common.RegistrationActivity" />
-        <activity android:name=".common.LoginActivity" />
+
         <activity android:name=".User.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

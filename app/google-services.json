@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1050197907752",
+    "project_id": "toll-app-firebase",
+    "storage_bucket": "toll-app-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050197907752:android:17bfea29f9d3dca5d9d81d",
+        "android_client_info": {
+          "package_name": "com.example.etoll_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050197907752-8lt3j87uu3p17oeufq82v9f9d3m7ssju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDIzvJodaqZM2bJuhn_KRBPbhwGUQDlGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050197907752-8lt3j87uu3p17oeufq82v9f9d3m7ssju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

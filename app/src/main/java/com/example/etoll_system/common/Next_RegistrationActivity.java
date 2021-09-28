@@ -1,14 +1,9 @@
 package com.example.etoll_system.common;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Pair;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,10 +11,8 @@ import com.example.etoll_system.R;
 
 public class Next_RegistrationActivity extends AppCompatActivity {
 
-    //creating variables
-    ImageView backBtn;
-    Button next;
-    TextView titleText;
+    Button lastNextBtn;
+
 
 
     @Override
@@ -28,36 +21,17 @@ public class Next_RegistrationActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_next__registration);
 
-        //hooks
-        backBtn = findViewById(R.id.registration_back_button);
-        next = findViewById(R.id.registrationNext_button);
-        titleText = findViewById(R.id.registrationTextView);
 
+        lastNextBtn=findViewById(R.id.next_button);
 
-    }
+        lastNextBtn.setOnClickListener(view -> {
+            Intent intent =new Intent(Next_RegistrationActivity.this,Last_RegistrationActivity.class);
+            startActivity(intent);
+        });
 
-
-
-    public void callLastRegistrationScreen(View view){
-
-
-            Intent intent = new Intent(getApplicationContext(),Next_RegistrationActivity.class);
-
-        Pair[] pairs = new Pair[3];
-
-        pairs[0] = new Pair<View,String>(backBtn,"transition_backArrow_button");
-            pairs[1] = new Pair<View,String>(next,"transition_Next_button");
-            pairs[2] = new Pair<View,String>(titleText,"transition_title_text");
-
-
-            if (android.os.Build.VERSION.SDK_INT>=android.os.Build.VERSION_CODES.LOLLIPOP) {
-                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Next_RegistrationActivity.this, pairs);
-                startActivity(intent,options.toBundle());
-            }
-            else{
-                startActivity(intent);
-            }
 
 
     }
+
+
 }

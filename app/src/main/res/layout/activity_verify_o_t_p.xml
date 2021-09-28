@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".common.VerifyOTPActivity"
+    android:background="#A4F8E4">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cancel_icon"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_close_24"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/enter_one_time_password_sent_on_n_26097276994"
+            android:text="@string/code"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="100sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/otp_description_text"
+            android:text="@string/verification"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/otp_description_text2"
+            android:text="@string/enter_one_time_password_sent_on_260972769994"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:layout_marginTop="50dp"
+
+            />
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/pin_View"
+            style="@style/PinWidget.PinView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="#FFFFF7"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="50dp"
+            app:itemRadius="5dp"
+            app:itemWidth="40dp"
+            app:lineColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <Button
+            android:id="@+id/verification_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/black"
+            android:text="@string/verify_code"
+            android:elevation="5dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            tools:ignore="UsingOnClickInXml" />
+        <!--android:onClick="callNextScreenFromOTP"-->
+
+
+    </LinearLayout>
+</ScrollView>
